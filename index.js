@@ -12,7 +12,7 @@ async function weatherApp() {
         temp: json.current.temp_c,
         wind_speed: json.current.wind_kph,
         wind_direction: json.current.wind_dir,
-        condition: json.condition.text,
+        condition: json.current.condition.text,
         humidity: json.current.humidity
     }
     console.log(data);
