@@ -19,16 +19,25 @@
             <p>
                 Get to know your weather forecast
             </p>
-            <button>
+            <button onclick="showSearch()">
                 Get Started
             </button>
         </div>
 
+        <div id="initial-form">
+            <form action="" id="init-form">
+                <label>
+                    Input Location:
+                    <input type="text" name="location" id="location">
+                </label>
+                <input type="submit" value="Check">
+        </div>
+
         <div id="data-display">
-            <input type="text" name="location" id="location">    
-            <button onclick="weatherApp()">
-                check
-            </button>
+            <form action="" id="form">
+                <input type="text" name="location">    
+                <input type="submit" value="Check">
+            </form>
         </div>
 
     </div>
