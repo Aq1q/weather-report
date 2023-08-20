@@ -38,8 +38,8 @@
             <div class="location">
                 <p class="location-name"></p>
                     <img src="./images/gps-icon.svg" alt="City">
-                    <span id="city">Elblag</span>
-                    <span id="country">Poland</span>
+                    <span id="city"></span>
+                    <span id="country"></span>
                 </p>
             </div>
             
@@ -49,31 +49,29 @@
                 </h1>
             </div>
             <div class="img-container">
-                <img src="./images/cloud.png" alt="">
+                <img id="condition-img" src="" alt="">
                 <div class="img-bg"></div>
             </div>
-            <h2 class="condition">Its Cloudy</h2>
-            <h2 class="temp">29<img id="celsius" src="./images/celsius-icon.svg" alt=""></h2>
+            <h2 class="condition"><span id="condition"></span></h2>
+            <h2 class="temp"><span id="temp"></span><img id="celsius" src="./images/celsius-icon.svg" alt=""></h2>
             
             <div class="stats">
                 <div id="wind-speed" class="stat-box">
-                    <img src="" alt="">
-                    <h3 id="wind-head"><span id="wind-data">23</span> km/h</h3>
+                    <img class="stat-icon" src="./images/wind.svg" alt="">
+                    <h3 id="wind-head"><span id="wind-data"></span> km/h</h3>
                     <p>Wind speed</p>
                 </div>
                 <div id="humidity" class="stat-box">
-                    <img src="" alt="">
+                    <img class="stat-icon" src="./images/humidity.svg" alt="">
                     <h3 id="humidity-head">
-                        <span id="humidity-data">30</span>
-                        %
+                        <span id="humidity-data"></span>%
                     </h3>
                     <p>Humidity</p>
                 </div>
                 <div id="feels-like" class="stat-box">
-                    <img src="" alt="">
+                    <img class="stat-icon" src="./images/temp.svg" alt="">
                     <h3 id="feeling-head">
-                        <span id="feeling-data">23</span>
-                         km/h
+                        <span id="feeling-data"></span><img id="celsius" src="./images/celsius-icon.svg" alt="">
                     </h3>
                     <p>Perceptible temp</p>
                 </div>
