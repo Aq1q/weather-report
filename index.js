@@ -36,7 +36,7 @@ async function weatherApp(search) {
 }
 
 async function getData(search) {
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=1e2ff4f6408445b3821114513231908 &q=${search}&aqi=yes`, {
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=1e2ff4f6408445b3821114513231908 &q=${search}&aqi=yes`, {
             mode: 'cors'
         }
         )
