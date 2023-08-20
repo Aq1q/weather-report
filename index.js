@@ -9,6 +9,12 @@ iniForm.addEventListener('submit', async (e) => {
 
 })
 
+const formBox = document.getElementById('form-box').addEventListener('click', (e) => {
+    if (e.target == document.getElementById('form-box')) {
+        e.target.style.display = "none";
+    }
+})
+
 function showSearch() {
     const element = document.getElementById('form-box');
     element.style.display = 'flex';
