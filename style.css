@@ -12,7 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: #0b0c1e;
     height: 100%;
 }
 
@@ -28,7 +28,10 @@ body {
     align-items: center;
     gap: 30px;
 }
-#starter-screen #img-container .img-bg {
+
+
+
+#starter-screen .img-container .img-bg {
     width: 100%;
     height: 100%;
     position: relative;
@@ -37,10 +40,10 @@ body {
     background-image: url(./images/cloud-background.png);
     background-position: center;
 }
-#starter-screen #img-container img{
+#starter-screen .img-container img{
     position: relative;
     z-index: 2;
-    filter: opacity(70%) blur(1px);
+    filter: opacity(70%);
 }
 #starter-screen h1 {
     font-size: 2rem;
@@ -69,7 +72,7 @@ body {
     background-color: #0075DD ;
 }
 
-#initial-form {
+#form-box {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 90%);
@@ -80,7 +83,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-#initial-form form {
+#form-box form {
     width: 50%;
     min-width: 254px;
     max-width: 360px;
@@ -98,7 +101,7 @@ body {
     align-items: center;
     gap:20px;
 }
-#initial-form form label {
+#form-box form label {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -106,5 +109,119 @@ body {
 }
 
 #data-display{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
     display: none;
+    flex-direction: column;
+}
+.location {
+    text-align: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.location img {
+    width: 20px;
+}
+
+.report-header {
+    padding-left: 25px;
+}
+
+#data-display .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 200px;
+    flex-direction: column;
+    padding: 0 40px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+#data-display .img-container img {
+    position: relative;
+    z-index: 2;
+    filter: opacity(70%);
+    height: 200px;
+}
+
+#data-display .img-container .img-bg {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    filter: opacity(50%) blur(20px);
+    background-image: url(./images/cloud-background.png);
+    background-position: center;    
+    background-repeat: no-repeat;
+}
+
+#data-display h2 {
+    text-align: center;
+}
+
+.condition {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.temp {
+    font-size: 4rem;
+}
+#celsius {
+    height: 3.2rem;
+}
+
+.stats {
+    align-self: center;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.stat-box {
+    width: 120px;
+    text-align: center;
+}
+.stat-box p {
+    color: #B5B5B5;
+    font-size: 0.8rem;
+}
+.stat-box h3 {
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+#search-bar {
+    width: 90%;
+    max-width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 10px;
+    background-color: #161729;
+}
+.search-button {
+    border-radius: inherit;
+    border: none;
+    background-color :inherit;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.search-button:hover {
+    cursor: pointer;
+}
+.search-icon {
+    width: 40px;
 }

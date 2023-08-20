@@ -2,12 +2,14 @@ const iniForm = document.getElementById('init-form');
 iniForm.addEventListener('submit', (e) => {
     e.preventDefault();
     initialSearch(e.target[0].value);
-    document.getElementById('init-form').style.display = 'none';
+    document.getElementById('form-box').style.display = 'none';
     document.getElementById('starter-screen').style.display = 'none';
+    document.getElementById('data-display').style.display = 'flex';
+
 })
 
 function showSearch() {
-    const element = document.getElementById('initial-form');
+    const element = document.getElementById('form-box');
     element.style.display = 'flex';
 }
 
